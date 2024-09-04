@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.9.1
+  - Django 5.1 compat
+
 ## 1.9.0
 
   - Added URLs for actor, target and action_object in the unread notification list API view
