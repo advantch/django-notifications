@@ -8,6 +8,7 @@ class Notification(AbstractNotification):
     class Meta(AbstractNotification.Meta):
         abstract = False
         swappable = swappable_setting('notifications', 'Notification')
+        db_table = 'user_notifications'
     
     def naturalday(self):
         """

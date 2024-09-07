@@ -20,18 +20,19 @@ with open('notifications/__init__.py', 'rb') as f:
 setup(
     name='django-notifications-hq',
     version=version,
-    description='GitHub notifications alike app for Django.',
+    description='GitHub notifications alike app for Django. Forked for TVSK',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    author='django-notifications team',
+    author='django-notifications teamy',
     author_email='yang@yangyubo.com',
-    url='http://github.com/django-notifications/django-notifications',
+    url='http://github.com/advantch/django-notifications',
     install_requires=[
         'django>=3.2',
         'django-model-utils>=3.1.0',
         'jsonfield>=2.1.0',
         'pytz',
-        'swapper'
+        'swapper',
+        'pydantic>=2.0.0'
     ],
     test_requires=[
         'django>=3.2',
@@ -57,6 +58,7 @@ setup(
         'Framework :: Django :: 3.2',
         'Framework :: Django :: 4.0',
         'Framework :: Django :: 4.1',
+        'Framework :: Django :: 5.1',
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python',
